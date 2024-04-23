@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:context=".ui.fragment.EditFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/title"
+                android:singleLine="true"
+                android:id="@+id/editTitle"
+                android:textColor="@color/white"
+                android:textColorHint="#D2FFFFFF"
+                android:layout_marginTop="10sp"
+                android:padding="@dimen/_10sdp"
+                android:fontFamily="@font/regular"
+                android:background="@drawable/edit_shape"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editsubtitle"
+                android:hint="@string/subtitle"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="#D2FFFFFF"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:fontFamily="@font/regular"
+                android:background="@drawable/edit_shape"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_250sdp"
+                android:hint="@string/notes"
+                android:id="@+id/editNotes"
+                android:textColor="@color/white"
+                android:gravity="start"
+                android:textColorHint="#D2FFFFFF"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:fontFamily="@font/regular"
+                android:background="@drawable/edit_shape"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnSaveNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/_20sdp"
+            android:backgroundTint="@color/custom_red"
+            android:src="@drawable/baseline_done_24" />
+
+    </FrameLayout>
+
+</ScrollView>

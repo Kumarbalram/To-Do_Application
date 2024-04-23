@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="#A8A8A8" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:text="@string/are_you_sure_you_want_to_delete_n_this_note"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textview_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:background="@drawable/no_shape"
+        android:padding="@dimen/_10sdp"
+        android:text="No" />
+
+    <TextView
+        android:id="@+id/textview_yes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/yes_shape"
+        android:padding="@dimen/_10sdp"
+        android:text="Yes"
+        />
+
+
+</LinearLayout>
